@@ -3,11 +3,11 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="8 Moments ist eine ruhige Reflexions-App für Morgen- und Abendroutinen, Journal, Fokus und persönliche Themen.">
+  <meta name="description" content="8 Moments ist eine ruhige Achtsamkeits-App für tägliche Routinen, Journal, Fokus und persönliche Entwicklung.">
   <meta name="theme-color" content="#f7efe4">
-  <title>8 Moments - Achtsamkeit für deinen Alltag</title>
+  <title>8 Moments - Mehr Ruhe. Weniger Chaos.</title>
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
-  <link rel="preload" href="assets/hero/8_moments.png" as="image">
+  <link rel="preload" href="assets/screens/8_moments.png" as="image">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -18,7 +18,10 @@
     </a>
     <nav class="nav-links" aria-label="Seitennavigation">
       <a href="#funktionen">Funktionen</a>
+      <a href="#themen">Themen</a>
       <a href="#ueber-uns">Über uns</a>
+      <a href="#faq">Fragen</a>
+      <a href="#preise">Download</a>
     </nav>
     <a class="header-cta" href="#download">App herunterladen</a>
   </header>
@@ -26,369 +29,242 @@
   <main>
     <section class="hero" aria-labelledby="hero-title">
       <div class="hero-copy">
-        <p class="eyebrow">Momentum - 8 Minute Reset</p>
-        <h1 id="hero-title">Achtsamkeit, die sich in dein Leben einfügt.</h1>
-        <p class="hero-text">Für mehr Gelassenheit, Fokus und innere Balance. Wann immer du sie brauchst.</p>
-        <ul class="check-list" aria-label="Wichtige Vorteile">
-          <li>Geführte Morgen- und Abendroutinen</li>
-          <li>Impulse für Motivation und Selbstvertrauen</li>
-          <li>Journal und Rückblicke für mehr Klarheit</li>
-          <li>Deine Privatsphäre hat Priorität</li>
-        </ul>
+        <p class="eyebrow badge-pill">Dein Moment. Deine Zeit.</p>
+        <h1 id="hero-title">Mehr Ruhe.<br>Weniger Chaos.</h1>
+        <p class="hero-text">Die Achtsamkeits-App für deinen Alltag. Routinen, Journaling und mentale Klarheit für mehr Balance und Gelassenheit.</p>
         <div id="download" class="download-row" aria-label="Download">
-          <a class="store-badge primary-store" href="https://play.google.com/store/apps/details?id=com.andreas.momentum" aria-label="8 Moments bei Google Play öffnen">
-            <span>Jetzt bei</span>
+          <a class="store-badge primary-store" href="mailto:sup-moment@outlook.com?subject=8%20Moments%20iOS%20Info" aria-label="Infos zur iOS-Version anfragen">
+            <span>Apple</span>
+            <strong>App Store</strong>
+          </a>
+          <a class="store-badge secondary-store" href="https://play.google.com/store/apps/details?id=com.andreas.momentum" aria-label="8 Moments bei Google Play öffnen">
+            <span>Android</span>
             <strong>Google Play</strong>
           </a>
-          <a class="store-badge muted-store" href="mailto:sup-moment@outlook.com?subject=8%20Moments%20App%20Benachrichtigung" aria-label="Benachrichtigung zur App anfragen">
-            <span>Updates per</span>
-            <strong>E-Mail</strong>
-          </a>
         </div>
+        <p class="hero-proof"><span>★★★★★</span> 4,9 · ruhige tägliche Routinen in wenigen Minuten</p>
       </div>
 
       <div class="hero-visual" aria-label="App-Vorschau">
-        <img src="assets/hero/8_moments.png" alt="Frau nutzt ruhig die 8 Moments App mit einer Tasse in der Hand">
-        <div class="hero-quote-card" aria-hidden="true">
-          <span class="quote-mark">&ldquo;</span>
-          <p>Ich vertraue mir, entscheide klar und gehe meinen Weg.</p>
-          <small>Affirmation des Tages</small>
+        <img src="assets/screens/8_moments.png" alt="8 Moments App mit ruhiger Tagesansicht und Journaling-Fokus">
+      </div>
+    </section>
+
+    <section id="funktionen" class="feature-ribbon" aria-label="Kernfunktionen">
+      <article>
+        <span class="ribbon-icon">☀</span>
+        <div>
+          <strong>Morgenroutinen</strong>
+          <p>Starte positiv und bewusst in den Tag.</p>
         </div>
-      </div>
+      </article>
+      <article>
+        <span class="ribbon-icon">◌</span>
+        <div>
+          <strong>Fokus & Klarheit</strong>
+          <p>Impulse für mehr Konzentration und Ruhe.</p>
+        </div>
+      </article>
+      <article>
+        <span class="ribbon-icon">✎</span>
+        <div>
+          <strong>Journaling</strong>
+          <p>Gedanken ordnen und bewusst reflektieren.</p>
+        </div>
+      </article>
+      <article>
+        <span class="ribbon-icon">☾</span>
+        <div>
+          <strong>Abendreflexion</strong>
+          <p>Den Tag ruhig und klar abschließen.</p>
+        </div>
+      </article>
+      <article>
+        <span class="ribbon-icon">⌁</span>
+        <div>
+          <strong>Statistiken</strong>
+          <p>Deine Entwicklung im Blick behalten.</p>
+        </div>
+      </article>
     </section>
 
-    <section id="funktionen" class="section-block" aria-labelledby="features-title">
-      <div class="section-heading">
-        <h2 id="features-title">8 Moments für deinen Alltag</h2>
-        <p>Unsere Funktionen helfen dir, bewusster zu leben. Schritt für Schritt.</p>
-      </div>
-      <div class="feature-grid compact-features">
-        <article>
-          <span class="icon-dot">&#9728;</span>
-          <h3>Tägliche Inspiration</h3>
-          <p>Impulse, Affirmationen und Motivation für einen positiven Start oder Ausklang.</p>
-        </article>
-        <article>
-          <span class="icon-dot">&#9998;</span>
-          <h3>Dein Journal</h3>
-          <p>Schreibe deine Gedanken, erkenne Muster und feiere deine Entwicklung.</p>
-        </article>
-        <article>
-          <span class="icon-dot">&#8599;</span>
-          <h3>Fortschritt sehen</h3>
-          <p>Statistiken und Rückblicke zeigen dir, was dich weiterbringt.</p>
-        </article>
-            <meta name="description" content="8 Moments ist eine ruhige Achtsamkeits-App für tägliche Routinen, Journal, Fokus und persönliche Entwicklung.">
-          <span class="icon-dot">&#9826;</span>
-            <title>8 Moments - Mehr Ruhe. Weniger Chaos.</title>
-          <p>Deine Daten bleiben bei dir. Sicher, verschlüsselt und nutzerbezogen geschützt.</p>
-        </article>
-      </div>
-    </section>
+    <section id="themen" class="journal-section" aria-labelledby="journal-title">
+      <div class="journal-copy">
+        <h2 id="journal-title">Dein digitales<br>8-Minuten-Tagebuch.</h2>
+        <p>Jeden Tag nur acht Minuten für dich. Geführte Fragen helfen dir, Gedanken zu ordnen, Gefühle zu verstehen und bewusster zu leben, morgens, zwischendurch oder am Abend.</p>
+        <p>In kurzer Zeit schreibst du auf, was dich bewegt, was dir wichtig ist und was du loslassen möchtest.</p>
+        <p>Für mehr Klarheit, innere Ruhe und ein stärkeres Bewusstsein für das, was wirklich zählt.</p>
 
-    <section id="ueber-uns" class="app-showcase" aria-labelledby="showcase-title">
-      <div class="showcase-copy">
-                <span class="brand-mark">
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                </span>
-        <p>Ob morgens beim Kaffee, in der Pause oder abends vor dem Schlafen: 8 Moments ist immer für dich da.</p>
-        <ul class="check-list small-list">
-          <li>Für mehr Klarheit</li>
-          <li>Für innere Ruhe</li>
-                <a href="#themen">Themen</a>
-                <a href="#ueber-uns">Über uns</a>
-                <a href="#faq">Blog</a>
-                <a href="#preise">Preise</a>
-        </ul>
-      </div>
-      <div class="screen-showcase" aria-label="App-Bildschirmvorschau">
-        <div class="screen-gallery">
-          <figure class="screen-frame main-screen">
-            <img src="assets/screens/app-dashboard.png" alt="8 Moments App mit Startbereich und ruhiger Tagesansicht">
-          </figure>
-                  <p class="eyebrow badge-pill">Dein Moment. Deine Zeit.</p>
-                  <h1 id="hero-title">Mehr Ruhe.<br>Weniger Chaos.</h1>
-                  <p class="hero-text">Die Achtsamkeits-App für deinen Alltag. Routinen, Journaling und mentale Klarheit für mehr Balance und Gelassenheit.</p>
+        <div class="benefit-grid" aria-label="Vorteile von 8 Moments">
           <div>
-                    <a class="store-badge primary-store muted-disabled" href="mailto:sup-moment@outlook.com?subject=8%20Moments%20iOS%20Info" aria-label="Infos zur iOS-Version anfragen">
-                      <span>Apple</span>
-                      <strong>App Store</strong>
+            <strong>Nur 8 Minuten am Tag</strong>
+            <span>Kleine Routinen, die realistisch bleiben.</span>
+          </div>
           <div>
-                    <a class="store-badge secondary-store" href="https://play.google.com/store/apps/details?id=com.andreas.momentum" aria-label="8 Moments bei Google Play öffnen">
-                      <span>Android</span>
-                      <strong>Google Play</strong>
-                    </a>
-                  </div>
-                  <p class="hero-proof"><span>★★★★★</span> 4,9 · 12.000+ tägliche Routinen</p>
-                </div>
-
-                <div class="hero-visual" aria-label="App-Vorschau">
-                  <img src="assets/hero/8_moments.png" alt="Frau nutzt ruhig die 8 Moments App mit einer Tasse in der Hand">
-                </div>
-              </section>
-
-              <section id="funktionen" class="feature-ribbon" aria-label="Kernfunktionen">
-                <article>
-                  <span class="ribbon-icon">☀</span>
-                  <div>
-                    <strong>Morgenroutinen</strong>
-                    <p>Starte positiv und bewusst in den Tag.</p>
-                  </div>
-                </article>
-                <article>
-                  <span class="ribbon-icon">◌</span>
-                  <div>
-                    <strong>Fokus & Klarheit</strong>
-                    <p>Impulse für mehr Konzentration.</p>
-                  </div>
-                </article>
-                <article>
-                  <span class="ribbon-icon">✎</span>
-                  <div>
-                    <strong>Journaling</strong>
-                    <p>Gedanken ordnen und reflektieren.</p>
-                  </div>
-                </article>
-                <article>
-                  <span class="ribbon-icon">☾</span>
-                  <div>
-                    <strong>Abendreflexion</strong>
-                    <p>Den Tag bewusst abschließen.</p>
-                  </div>
-                </article>
-                <article>
-                  <span class="ribbon-icon">⌁</span>
-                  <div>
-                    <strong>Statistiken</strong>
-                    <p>Deine Entwicklung im Blick.</p>
-                  </div>
-                </article>
-              </section>
-
-              <section id="themen" class="journal-section" aria-labelledby="journal-title">
-                <div class="journal-copy">
-                  <h2 id="journal-title">Dein digitales<br>8-Minuten-Tagebuch.</h2>
-                  <p>Jeden Tag nur acht Minuten für dich. Geführte Fragen helfen dir, Gedanken zu ordnen, Gefühle zu verstehen und bewusster zu leben, morgens, zwischendurch oder am Abend.</p>
-                  <p>In kurzer Zeit schreibst du auf, was dich bewegt, was dir wichtig ist und was du loslassen möchtest.</p>
-                  <p>Für mehr Klarheit, innere Ruhe und ein stärkeres Bewusstsein für das, was wirklich zählt.</p>
-                  <div class="benefit-grid" aria-label="Vorteile von 8 Moments">
-                    <div>
-                      <strong>Nur 8 Minuten am Tag</strong>
-                      <span>Kleine Routinen, die realistisch bleiben.</span>
-                    </div>
-                    <div>
-                      <strong>Deine Entwicklung verstehen</strong>
-                      <span>Stimmung, Fokus und Themen werden sichtbar.</span>
-                    </div>
-                    <div>
-                      <strong>Geführte Fragen statt leere Seiten</strong>
-                      <span>Ein klarer Einstieg ohne Überforderung.</span>
-                    </div>
-                    <div>
-                      <strong>Privat, sicher & passwortgeschützt</strong>
-                      <span>Rechtliche Seiten und Löschhinweise sind öffentlich verlinkbar.</span>
-                    </div>
-                    <div>
-                      <strong>Mehr Klarheit & emotionale Ruhe</strong>
-                      <span>Weniger inneres Rauschen im Alltag.</span>
-                    </div>
-                    <div>
-                      <strong>Weniger Stress, mehr Gelassenheit</strong>
-                      <span>Ein ruhiger Ort für deinen Kopf.</span>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="journal-visual" aria-label="Journal-Vorschau der App">
-                  <figure class="device-card large-device">
-                    <img src="assets/screens/app-flow.png" alt="8 Moments App mit geführtem Journal und Reflexionsfragen">
-                  </figure>
-                  <div class="leaf-accent" aria-hidden="true"></div>
-                </div>
-              </section>
-
-              <section id="ueber-uns" class="daily-flow" aria-labelledby="daily-flow-title">
-                <div class="section-heading compact-heading">
-                  <h2 id="daily-flow-title">So begleitet dich 8 Moments jeden Tag</h2>
-                </div>
-                <div class="daily-flow-shell">
-                  <div class="flow-steps">
-                    <article>
-                      <span class="flow-icon">☀</span>
-                      <strong>Impulse erhalten</strong>
-                      <p>Tägliche Erinnerungen helfen dir, dranzubleiben.</p>
-                    </article>
-                    <article>
-                      <span class="flow-arrow">→</span>
-                      <span class="flow-icon">✎</span>
-                      <strong>In 8 Minuten reflektieren</strong>
-                      <p>Geführte Fragen bringen deine Gedanken auf den Punkt.</p>
-                    </article>
-                    <article>
-                      <span class="flow-arrow">→</span>
-                      <span class="flow-icon">♡</span>
-                      <strong>Klarheit gewinnen</strong>
-                      <p>Du erkennst Muster, Fortschritte und das, was dir wichtig ist.</p>
-                    </article>
-                    <article>
-                      <span class="flow-arrow">→</span>
-                      <span class="flow-icon">⌁</span>
-                      <strong>Routinen aufbauen</strong>
-                      <p>Kleine Schritte. Große Wirkung.</p>
-                    </article>
-                    <article>
-                      <span class="flow-arrow">→</span>
-                      <span class="flow-icon">◌</span>
-                      <strong>Gelassener leben</strong>
-                      <p>Mehr Ruhe im Kopf. Mehr du im Leben.</p>
-                    </article>
-                  </div>
-                  <div class="decor-card" aria-hidden="true"></div>
-                </div>
-              </section>
-
-              <section id="faq" class="faq-section" aria-labelledby="faq-title">
-                <div class="faq-column">
-                  <h2 id="faq-title">Häufige Fragen</h2>
-                  <div class="faq-grid">
-                    <details>
-                      <summary>Was ist 8 Moments?</summary>
-                      <p>8 Moments ist eine ruhige App für Achtsamkeit, kurze Routinen, Journaling, Fokus und bewusste Tagesreflexion.</p>
-                    </details>
-                    <details>
-                      <summary>Funktioniert die App offline?</summary>
-                      <p>Viele Inhalte bleiben lokal nutzbar. Mit Konto können Daten zusätzlich synchronisiert und gesichert werden.</p>
-                    </details>
-                    <details>
-                      <summary>Wie lange dauert eine Routine?</summary>
-                      <p>Der Kernablauf ist auf etwa acht Minuten ausgelegt, damit er sich realistisch in den Alltag einfügt.</p>
-                    </details>
-                    <details>
-                      <summary>Sind meine Daten sicher?</summary>
-                      <p>Die rechtlichen Hinweise, Datenschutzinformationen und die öffentliche Konto-Löschungsseite sind bereits auf dieser Website verlinkt.</p>
-                    </details>
-                    <details>
-                      <summary>Gibt es verschiedene Themen?</summary>
-                      <p>Ja, zum Beispiel Morgenroutine, Abendreflexion, Fokus, Gedanken sortieren und tägliche Impulse.</p>
-                    </details>
-                    <details>
-                      <summary>Für wen ist 8 Moments geeignet?</summary>
-                      <p>Für Erwachsene, die mehr Ruhe, Struktur und Klarheit in ihren Alltag bringen möchten.</p>
-                    </details>
-                  </div>
-                </div>
-                <aside class="faq-contact-card">
-                  <div>
-                    <h3>Noch Fragen?</h3>
-                    <p>Schreib uns gerne über unser Kontaktformular oder direkt per E-Mail. So bleiben auch Support und rechtliche Rückfragen sauber erreichbar.</p>
-                  </div>
-                  <a class="text-link" href="mailto:sup-moment@outlook.com?subject=8%20Moments%20Kontakt">Zum Kontaktformular</a>
-                </aside>
-              </section>
-
-              <section id="preise" class="final-cta" aria-labelledby="final-cta-title">
-                <div class="cta-decor left-decor" aria-hidden="true"></div>
-                <div class="cta-copy">
-                  <h2 id="final-cta-title">Beginne heute mit<br>deinem ersten ruhigen Moment.</h2>
-                  <p>Für mehr Klarheit. Für dich.</p>
-                  <div class="download-row centered-download">
-                    <a class="store-badge primary-store muted-disabled" href="mailto:sup-moment@outlook.com?subject=8%20Moments%20iOS%20Info" aria-label="Infos zur iOS-Version anfragen">
-                      <span>Apple</span>
-                      <strong>App Store</strong>
-                    </a>
-                    <a class="store-badge secondary-store" href="https://play.google.com/store/apps/details?id=com.andreas.momentum" aria-label="8 Moments bei Google Play öffnen">
-                      <span>Android</span>
+            <strong>Deine Entwicklung verstehen</strong>
+            <span>Stimmung, Fokus und Themen werden sichtbar.</span>
+          </div>
+          <div>
+            <strong>Geführte Fragen statt leerer Seiten</strong>
+            <span>Ein klarer Einstieg ohne Überforderung.</span>
+          </div>
+          <div>
+            <strong>Privat, sicher & passwortgeschützt</strong>
+            <span>Rechtliche Seiten und Löschhinweise sind öffentlich verlinkbar.</span>
+          </div>
+          <div>
+            <strong>Mehr Klarheit & emotionale Ruhe</strong>
+            <span>Weniger inneres Rauschen im Alltag.</span>
+          </div>
+          <div>
+            <strong>Weniger Stress, mehr Gelassenheit</strong>
+            <span>Ein ruhiger Ort für deinen Kopf.</span>
           </div>
         </div>
-                  </div>
-                </div>
-                <div class="cta-decor right-decor" aria-hidden="true"></div>
-              </section>
+      </div>
 
-              <section class="trust-strip" aria-label="Rechtliche und Store-relevante Links">
-                <article>
-                  <strong>Google Play bereit</strong>
-                  <p>Öffentlich verlinkbare Seiten für Datenschutz, Impressum, Nutzungsbedingungen und Konto-Löschung sind vorhanden.</p>
-                </article>
-                <article>
-                  <strong>Support erreichbar</strong>
-                  <p><a href="mailto:sup-moment@outlook.com">sup-moment@outlook.com</a></p>
-                </article>
-                <article>
-                  <strong>Direkte Verweise</strong>
-                  <p><a href="datenschutz.html">Datenschutz</a> · <a href="impressum.html">Impressum</a> · <a href="konto-loeschen.html">Konto löschen</a></p>
-                </article>
+      <div class="journal-visual" aria-label="Journal-Vorschau der App">
+        <figure class="device-card large-device">
+          <img src="assets/screens/8_moments.png" alt="8 Moments App mit geführten Fragen und Journaling-Bereich">
+        </figure>
+        <div class="leaf-accent" aria-hidden="true"></div>
       </div>
     </section>
 
-    <section class="steps-section" aria-labelledby="steps-title">
-              <div class="footer-brand-block">
-        <h2 id="steps-title">So einfach geht's</h2>
-                  <span class="brand-mark">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                  </span>
-      <div class="steps-grid">
-        <article><span>1</span><strong>App herunterladen</strong><p>Erhältlich für Android.</p></article>
-                <p>Eine ruhige App für Achtsamkeit, Fokus und kleine tägliche Resets.</p>
-        <article><span>3</span><strong>Deinen Moment finden</strong><p>Impulse, Routinen und Affirmationen entdecken.</p></article>
-        <article><span>4</span><strong>Wachsen</strong><p>Mit kleinen Schritten Großes verändern.</p></article>
+    <section id="ueber-uns" class="daily-flow" aria-labelledby="daily-flow-title">
+      <div class="section-heading compact-heading">
+        <h2 id="daily-flow-title">So begleitet dich 8 Moments jeden Tag</h2>
       </div>
-                <a href="#themen">Themen</a>
-    </section>
-                <a href="#faq">Blog</a>
-                <a href="#preise">Preise</a>
-                <a href="mailto:sup-moment@outlook.com">Kontakt</a>
-                <a href="datenschutz.html">Datenschutz</a>
-    <section class="section-block testimonials-section" aria-labelledby="testimonials-title">
-        <h2 id="testimonials-title">Was unsere Nutzer sagen</h2>
-                <a href="nutzungsbedingungen.html">Nutzungsbedingungen</a>
-      <div class="testimonial-grid">
-        <article><div class="stars">★★★★★</div><p>Endlich eine App, die mir wirklich hilft, bei mir zu bleiben. Die Impulse sind täglich mein Reset.</p><strong>Laura</strong></article>
-        <article><div class="stars">★★★★★</div><p>Die Morgenroutine bringt so viel Ruhe in meinen Tag. Ich möchte diese App nicht mehr missen.</p><strong>Markus</strong></article>
-        <article><div class="stars">★★★★★</div><p>Das Journal ist mein Highlight. So schön, meine Entwicklung rückblickend zu sehen.</p><strong>Julia</strong></article>
+      <div class="daily-flow-shell">
+        <div class="flow-steps">
+          <article>
+            <span class="flow-icon">☀</span>
+            <strong>Impulse erhalten</strong>
+            <p>Tägliche Erinnerungen helfen dir, dranzubleiben.</p>
+          </article>
+          <article>
+            <span class="flow-arrow">→</span>
+            <span class="flow-icon">✎</span>
+            <strong>In 8 Minuten reflektieren</strong>
+            <p>Geführte Fragen bringen deine Gedanken auf den Punkt.</p>
+          </article>
+          <article>
+            <span class="flow-arrow">→</span>
+            <span class="flow-icon">♡</span>
+            <strong>Klarheit gewinnen</strong>
+            <p>Du erkennst Muster, Fortschritte und das, was dir wichtig ist.</p>
+          </article>
+          <article>
+            <span class="flow-arrow">→</span>
+            <span class="flow-icon">⌁</span>
+            <strong>Routinen aufbauen</strong>
+            <p>Kleine Schritte. Große Wirkung.</p>
+          </article>
+          <article>
+            <span class="flow-arrow">→</span>
+            <span class="flow-icon">◌</span>
+            <strong>Gelassener leben</strong>
+            <p>Mehr Ruhe im Kopf. Mehr du im Leben.</p>
+          </article>
+        </div>
+        <div class="decor-card" aria-hidden="true"></div>
       </div>
     </section>
 
-    <section class="final-cta" aria-labelledby="final-cta-title">
-      <div>
-        <h2 id="final-cta-title">Bereit für mehr Achtsamkeit?</h2>
-        <p>Starte jetzt deine Reise zu mehr Klarheit und innerer Balance.</p>
+    <section id="faq" class="faq-section" aria-labelledby="faq-title">
+      <div class="faq-column">
+        <h2 id="faq-title">Häufige Fragen</h2>
+        <div class="faq-grid">
+          <details>
+            <summary>Was ist 8 Moments?</summary>
+            <p>8 Moments ist eine ruhige App für Achtsamkeit, kurze Routinen, Journaling, Fokus und bewusste Tagesreflexion.</p>
+          </details>
+          <details>
+            <summary>Funktioniert die App offline?</summary>
+            <p>Viele Inhalte bleiben lokal nutzbar. Mit Konto können Daten zusätzlich synchronisiert und gesichert werden.</p>
+          </details>
+          <details>
+            <summary>Wie lange dauert eine Routine?</summary>
+            <p>Der Kernablauf ist auf etwa acht Minuten ausgelegt, damit er sich realistisch in den Alltag einfügt.</p>
+          </details>
+          <details>
+            <summary>Sind meine Daten sicher?</summary>
+            <p>Die rechtlichen Hinweise, Datenschutzinformationen und die öffentliche Konto-Löschungsseite sind bereits auf dieser Website verlinkt.</p>
+          </details>
+          <details>
+            <summary>Gibt es verschiedene Themen?</summary>
+            <p>Ja, zum Beispiel Morgenroutine, Abendreflexion, Fokus, Gedanken sortieren und tägliche Impulse.</p>
+          </details>
+          <details>
+            <summary>Für wen ist 8 Moments geeignet?</summary>
+            <p>Für Erwachsene, die mehr Ruhe, Struktur und Klarheit in ihren Alltag bringen möchten.</p>
+          </details>
+        </div>
+      </div>
+
+      <aside class="faq-contact-card">
+        <div>
+          <h3>Noch Fragen?</h3>
+          <p>Schreib uns gerne direkt per E-Mail. So bleiben auch Support und rechtliche Rückfragen sauber erreichbar.</p>
+        </div>
+        <a class="text-link" href="mailto:sup-moment@outlook.com?subject=8%20Moments%20Kontakt">sup-moment@outlook.com</a>
+      </aside>
+    </section>
+
+    <section id="preise" class="final-cta" aria-labelledby="final-cta-title">
+      <div class="cta-decor left-decor" aria-hidden="true"></div>
+      <div class="cta-copy">
+        <h2 id="final-cta-title">Beginne heute mit<br>deinem ersten ruhigen Moment.</h2>
+        <p>Für mehr Klarheit. Für dich.</p>
         <div class="download-row centered-download">
-          <a class="store-badge primary-store" href="https://play.google.com/store/apps/details?id=com.andreas.momentum" aria-label="8 Moments bei Google Play öffnen">
-            <span>Jetzt bei</span>
-            <strong>Google Play</strong>
+          <a class="store-badge primary-store" href="mailto:sup-moment@outlook.com?subject=8%20Moments%20iOS%20Info" aria-label="Infos zur iOS-Version anfragen">
+            <span>Apple</span>
+            <strong>App Store</strong>
           </a>
-          <a class="store-badge muted-store" href="mailto:sup-moment@outlook.com?subject=8%20Moments%20App%20Benachrichtigung">
-            <span>Fragen an</span>
-            <strong>Support</strong>
+          <a class="store-badge secondary-store" href="https://play.google.com/store/apps/details?id=com.andreas.momentum" aria-label="8 Moments bei Google Play öffnen">
+            <span>Android</span>
+            <strong>Google Play</strong>
           </a>
         </div>
       </div>
+      <div class="cta-decor right-decor" aria-hidden="true"></div>
+    </section>
+
+    <section class="trust-strip" aria-label="Rechtliche und Store-relevante Links">
+      <article>
+        <strong>Google Play bereit</strong>
+        <p>Öffentlich verlinkbare Seiten für Datenschutz, Impressum, Nutzungsbedingungen und Konto-Löschung sind vorhanden.</p>
+      </article>
+      <article>
+        <strong>Support erreichbar</strong>
+        <p><a href="mailto:sup-moment@outlook.com">sup-moment@outlook.com</a></p>
+      </article>
+      <article>
+        <strong>Direkte Verweise</strong>
+        <p><a href="datenschutz.html">Datenschutz</a> · <a href="impressum.html">Impressum</a> · <a href="konto-loeschen.html">Konto löschen</a> · <a href="nutzungsbedingungen.html">Nutzungsbedingungen</a></p>
+      </article>
     </section>
   </main>
 
   <footer class="site-footer">
-    <div>
+    <div class="footer-brand-block">
       <a class="brand footer-brand" href="index.html">
         <span class="brand-mark">8</span>
         <span>Moments</span>
       </a>
       <p>Eine ruhige App für Achtsamkeit, Fokus und kleine tägliche Resets.</p>
     </div>
-    <nav aria-label="Rechtliche Links">
+    <nav aria-label="Footer-Navigation">
       <a href="#funktionen">Funktionen</a>
+      <a href="#themen">Themen</a>
       <a href="#ueber-uns">Über uns</a>
+      <a href="#faq">Fragen</a>
+      <a href="#preise">Download</a>
+      <a href="mailto:sup-moment@outlook.com">Kontakt</a>
       <a href="datenschutz.html">Datenschutz</a>
       <a href="impressum.html">Impressum</a>
-      <a href="nutzungsbedingungen.html">Nutzungsbedingungen</a>
       <a href="konto-loeschen.html">Konto löschen</a>
-      <a href="mailto:sup-moment@outlook.com">Support</a>
+      <a href="nutzungsbedingungen.html">Nutzungsbedingungen</a>
     </nav>
   </footer>
 </body>
