@@ -482,13 +482,8 @@ main {
   width: 100%;
 }
 
-.leaf-accent,
-.decor-card,
-.cta-decor {
-  background: url("assets/hero-bg.png") center / cover no-repeat;
-}
-
 .leaf-accent {
+  background: url("assets/screens/landingpage_klein.png") center right / cover no-repeat;
   border-radius: 999px 999px 0 999px;
   bottom: -18px;
   height: 260px;
@@ -567,6 +562,9 @@ main {
 }
 
 .decor-card {
+  background:
+    linear-gradient(180deg, rgba(255, 251, 245, 0.18), rgba(247, 239, 228, 0.24)),
+    url("assets/screens/langingpage_gross.png") center / cover no-repeat;
   border: 1px solid rgba(255, 255, 255, 0.78);
   border-radius: 28px;
   box-shadow: var(--shadow-soft);
@@ -628,7 +626,7 @@ main {
 }
 
 .faq-contact-card {
-  background: linear-gradient(180deg, rgba(252, 245, 237, 0.9), rgba(248, 239, 227, 0.96)), url("assets/hero-bg.png") center / cover no-repeat;
+  background: linear-gradient(180deg, rgba(252, 245, 237, 0.78), rgba(248, 239, 227, 0.9)), url("assets/screens/landingpage_klein.png") center / cover no-repeat;
   border: 1px solid rgba(255, 255, 255, 0.82);
   border-radius: 24px;
   box-shadow: var(--shadow-soft);
@@ -678,6 +676,7 @@ main {
 }
 
 .cta-decor {
+  background: url("assets/screens/landingpage_klein.png") center / cover no-repeat;
   border-radius: 24px;
   height: 120px;
 }
@@ -687,7 +686,7 @@ main {
 }
 
 .right-decor {
-  background-position: right center;
+  background: url("assets/screens/langingpage_gross.png") center / cover no-repeat;
 }
 
 .centered-download {
