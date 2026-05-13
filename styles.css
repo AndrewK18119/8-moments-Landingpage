@@ -347,7 +347,7 @@ main {
 .hero-visual > img {
   height: 100%;
   object-fit: cover;
-  object-position: center top;
+  object-position: 58% center;
   width: 100%;
 }
 
@@ -459,10 +459,10 @@ main {
 }
 
 .device-card {
-  background: #141816;
-  border: 7px solid #141816;
-  border-radius: 34px;
-  box-shadow: 0 24px 56px rgba(26, 33, 28, 0.26);
+  background: rgba(255, 255, 255, 0.84);
+  border: 12px solid rgba(255, 255, 255, 0.92);
+  border-radius: 30px;
+  box-shadow: 0 28px 62px rgba(54, 48, 36, 0.16);
   margin: 0;
   overflow: hidden;
   position: absolute;
@@ -471,23 +471,26 @@ main {
 
 .large-device {
   left: 50%;
-  max-width: 320px;
-  top: 54px;
-  transform: translateX(-50%) rotate(7deg);
-  width: 50%;
+  max-width: 470px;
+  top: 92px;
+  transform: translateX(-50%) rotate(-6deg);
+  width: 78%;
 }
 
 .device-card img {
+  aspect-ratio: 16 / 11;
   display: block;
+  object-fit: cover;
+  object-position: center;
   width: 100%;
 }
 
 .leaf-accent {
-  background: url("assets/screens/landingpage_klein.png") center right / cover no-repeat;
+  background: url("assets/screens/landingpage_klein.png") 76% center / cover no-repeat;
   border-radius: 999px 999px 0 999px;
   bottom: -18px;
   height: 260px;
-  opacity: 0.78;
+  opacity: 0.9;
   position: absolute;
   right: -8px;
   width: 220px;
@@ -564,7 +567,7 @@ main {
 .decor-card {
   background:
     linear-gradient(180deg, rgba(255, 251, 245, 0.18), rgba(247, 239, 228, 0.24)),
-    url("assets/screens/langingpage_gross.png") center / cover no-repeat;
+    url("assets/screens/langingpage_gross.png") 82% center / cover no-repeat;
   border: 1px solid rgba(255, 255, 255, 0.78);
   border-radius: 28px;
   box-shadow: var(--shadow-soft);
@@ -626,7 +629,7 @@ main {
 }
 
 .faq-contact-card {
-  background: linear-gradient(180deg, rgba(252, 245, 237, 0.78), rgba(248, 239, 227, 0.9)), url("assets/screens/landingpage_klein.png") center / cover no-repeat;
+  background: linear-gradient(180deg, rgba(252, 245, 237, 0.84), rgba(248, 239, 227, 0.92)), url("assets/screens/landingpage_klein.png") right center / cover no-repeat;
   border: 1px solid rgba(255, 255, 255, 0.82);
   border-radius: 24px;
   box-shadow: var(--shadow-soft);
@@ -676,7 +679,7 @@ main {
 }
 
 .cta-decor {
-  background: url("assets/screens/landingpage_klein.png") center / cover no-repeat;
+  background: url("assets/screens/landingpage_klein.png") right center / cover no-repeat;
   border-radius: 24px;
   height: 120px;
 }
@@ -686,7 +689,7 @@ main {
 }
 
 .right-decor {
-  background: url("assets/screens/langingpage_gross.png") center / cover no-repeat;
+  background: url("assets/screens/langingpage_gross.png") right center / cover no-repeat;
 }
 
 .centered-download {
@@ -870,9 +873,9 @@ main {
   }
 
   .large-device {
-    max-width: 260px;
-    top: 42px;
-    width: 72%;
+    max-width: 320px;
+    top: 54px;
+    width: 82%;
   }
 
   .faq-contact-card h3 {
