@@ -99,9 +99,9 @@ h3 {
 }
 
 h1 {
-  font-size: clamp(58px, 5.6vw, 88px);
-  line-height: 0.94;
-  margin-bottom: 24px;
+  font-size: clamp(50px, 4.9vw, 76px);
+  line-height: 0.97;
+  margin-bottom: 22px;
 }
 
 h2 {
@@ -121,13 +121,13 @@ h3 {
   background: rgba(255, 251, 246, 0.8);
   backdrop-filter: blur(18px);
   border: 1px solid rgba(255, 255, 255, 0.76);
-  border-radius: 28px;
+  border-radius: 30px;
   box-shadow: 0 14px 38px rgba(54, 48, 36, 0.06);
   display: flex;
-  gap: 26px;
+  gap: 22px;
   justify-content: space-between;
   margin: 14px clamp(18px, 5vw, 42px) 0;
-  padding: 16px clamp(18px, 4vw, 40px);
+  padding: 14px clamp(18px, 3.2vw, 34px);
   position: sticky;
   top: 14px;
   z-index: 20;
@@ -183,7 +183,7 @@ h3 {
 .nav-links a,
 .site-footer a {
   color: var(--primary-dark);
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 700;
 }
 
@@ -203,11 +203,11 @@ h3 {
   align-items: center;
   border-radius: 16px;
   display: inline-flex;
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 500;
   justify-content: center;
-  min-height: 46px;
-  padding: 0 18px;
+  min-height: 44px;
+  padding: 0 16px;
   transition: transform 180ms ease, box-shadow 180ms ease, background 180ms ease, border-color 180ms ease;
 }
 
@@ -216,7 +216,7 @@ h3 {
   border: 1px solid var(--primary);
   box-shadow: 0 14px 28px rgba(20, 79, 63, 0.16);
   color: #fff;
-  min-width: 170px;
+  min-width: 136px;
 }
 
 .header-cta:hover,
@@ -245,15 +245,15 @@ main {
 .hero {
   align-items: center;
   display: grid;
-  gap: clamp(32px, 5vw, 84px);
-  grid-template-columns: minmax(320px, 0.72fr) minmax(470px, 1.28fr);
-  min-height: 720px;
-  padding: clamp(42px, 6vw, 72px) clamp(24px, 7vw, 128px) 0;
+  gap: clamp(26px, 4.2vw, 64px);
+  grid-template-columns: minmax(320px, 0.83fr) minmax(520px, 1.17fr);
+  min-height: 660px;
+  padding: clamp(32px, 4.8vw, 54px) clamp(24px, 6vw, 92px) 0;
 }
 
 .hero-copy {
   align-self: center;
-  max-width: 470px;
+  max-width: 390px;
 }
 
 .eyebrow {
@@ -291,8 +291,8 @@ main {
 }
 
 .hero-text {
-  margin-bottom: 26px;
-  max-width: 34ch;
+  margin-bottom: 24px;
+  max-width: 31ch;
 }
 
 .download-row {
@@ -306,18 +306,18 @@ main {
   box-shadow: var(--shadow-soft);
   flex-direction: column;
   gap: 1px;
-  min-width: 156px;
-  padding: 11px 16px;
+  min-width: 136px;
+  padding: 10px 14px;
 }
 
 .store-badge span {
-  font-size: 10px;
+  font-size: 9px;
   font-weight: 700;
   opacity: 0.82;
 }
 
 .store-badge strong {
-  font-size: 18px;
+  font-size: 15px;
   line-height: 1.05;
 }
 
@@ -342,10 +342,10 @@ main {
   align-items: center;
   color: var(--primary-dark);
   display: flex;
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 600;
   gap: 12px;
-  margin: 22px 0 0;
+  margin: 18px 0 0;
 }
 
 .hero-proof span {
@@ -355,15 +355,15 @@ main {
 .hero-visual {
   align-self: stretch;
   background: radial-gradient(circle at 12% 20%, rgba(255, 255, 255, 0.92), transparent 34%), linear-gradient(180deg, rgba(255, 255, 255, 0.84), rgba(248, 240, 228, 0.88));
-  border-radius: 56px;
+  border-radius: 42px;
   box-shadow: var(--shadow-strong);
-  min-height: 720px;
+  min-height: 560px;
   overflow: hidden;
   position: relative;
 }
 
 .hero-visual::before {
-  background: linear-gradient(90deg, rgba(255, 249, 241, 0.54) 0%, rgba(255, 249, 241, 0.08) 30%, rgba(35, 44, 33, 0.02) 100%);
+  background: linear-gradient(90deg, rgba(255, 249, 241, 0.46) 0%, rgba(255, 249, 241, 0.08) 24%, rgba(35, 44, 33, 0.02) 100%);
   content: "";
   inset: 0;
   position: absolute;
@@ -381,7 +381,7 @@ main {
 .hero-scene-image {
   height: 100%;
   object-fit: cover;
-  object-position: 42% center;
+  object-position: 61% center;
   position: absolute;
   right: 0;
   top: 0;
@@ -395,10 +395,10 @@ main {
   box-shadow: 0 30px 70px rgba(38, 30, 22, 0.24);
   overflow: hidden;
   position: absolute;
-  right: 34px;
-  top: 104px;
-  transform: rotate(7deg);
-  width: min(31%, 238px);
+  right: 24px;
+  top: 74px;
+  transform: rotate(6deg);
+  width: min(27%, 208px);
   z-index: 2;
 }
 
@@ -416,49 +416,49 @@ main {
 
 .hero-phone-screen {
   background: linear-gradient(180deg, #fff8f0 0%, #f6ead9 100%);
-  min-height: 520px;
-  padding: 22px 16px 18px;
+  min-height: 432px;
+  padding: 18px 13px 14px;
 }
 
 .hero-phone-status {
   color: #5a4c3e;
-  font-size: 11px;
+  font-size: 10px;
   font-weight: 700;
-  margin-bottom: 18px;
+  margin-bottom: 14px;
 }
 
 .hero-phone-greeting {
   color: #1c352d;
   font-family: "Playfair Local", Georgia, "Times New Roman", serif;
-  font-size: 27px;
-  line-height: 1.05;
-  margin-bottom: 16px;
+  font-size: 18px;
+  line-height: 1.08;
+  margin-bottom: 12px;
 }
 
 .hero-phone-message {
   background: rgba(255, 255, 255, 0.88);
-  border-radius: 20px;
+  border-radius: 16px;
   color: #5a4c3e;
-  font-size: 15px;
+  font-size: 12px;
   font-weight: 600;
   line-height: 1.45;
-  margin-bottom: 18px;
-  padding: 16px 14px;
+  margin-bottom: 14px;
+  padding: 12px 11px;
 }
 
 .hero-phone-list {
   display: grid;
-  gap: 10px;
+  gap: 8px;
 }
 
 .hero-phone-list > div {
   align-items: center;
   background: rgba(255, 255, 255, 0.72);
-  border-radius: 18px;
+  border-radius: 15px;
   display: grid;
-  gap: 10px;
-  grid-template-columns: 30px 1fr auto;
-  padding: 12px 12px 12px 10px;
+  gap: 8px;
+  grid-template-columns: 26px 1fr auto;
+  padding: 10px 10px 10px 8px;
 }
 
 .hero-phone-icon {
@@ -467,11 +467,11 @@ main {
   border-radius: 999px;
   color: #7a5631;
   display: inline-flex;
-  font-size: 12px;
+  font-size: 10px;
   font-weight: 800;
-  height: 30px;
+  height: 26px;
   justify-content: center;
-  width: 30px;
+  width: 26px;
 }
 
 .hero-phone-list strong,
@@ -482,28 +482,28 @@ main {
 
 .hero-phone-list strong {
   color: #1c352d;
-  font-size: 13px;
+  font-size: 11px;
 }
 
 .hero-phone-list small,
 .hero-phone-chevron,
 .hero-phone-nav span {
   color: #857564;
-  font-size: 11px;
+  font-size: 9px;
 }
 
 .hero-phone-chevron {
-  font-size: 18px;
+  font-size: 15px;
   font-weight: 700;
 }
 
 .hero-phone-nav {
   border-top: 1px solid rgba(135, 117, 100, 0.18);
   display: grid;
-  gap: 8px;
+  gap: 6px;
   grid-template-columns: repeat(4, minmax(0, 1fr));
-  margin-top: 18px;
-  padding-top: 12px;
+  margin-top: 14px;
+  padding-top: 10px;
   text-align: center;
 }
 
@@ -515,7 +515,7 @@ main {
   display: grid;
   gap: 16px;
   grid-template-columns: repeat(5, minmax(0, 1fr));
-  margin-top: -48px;
+  margin-top: -34px;
   padding: 24px;
   position: relative;
   z-index: 2;
@@ -938,17 +938,17 @@ main {
 
   .hero {
     min-height: auto;
-    padding-top: 34px;
+    padding-top: 28px;
   }
 
   .hero-visual {
-    min-height: 520px;
+    min-height: 500px;
   }
 
   .hero-phone {
-    right: 22px;
-    top: 70px;
-    width: min(38%, 230px);
+    right: 18px;
+    top: 56px;
+    width: min(31%, 198px);
   }
 
   .feature-ribbon,
@@ -1022,18 +1022,18 @@ main {
   }
 
   .hero-phone {
-    right: 14px;
-    top: 46px;
-    width: min(44%, 198px);
+    right: 12px;
+    top: 42px;
+    width: min(44%, 176px);
   }
 
   .hero-phone-screen {
-    min-height: 430px;
-    padding: 18px 12px 14px;
+    min-height: 360px;
+    padding: 14px 10px 12px;
   }
 
   .hero-phone-greeting {
-    font-size: 22px;
+    font-size: 16px;
   }
 
   .feature-ribbon,
