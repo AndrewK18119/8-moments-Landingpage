@@ -56,13 +56,12 @@ html {
 
 body {
   background:
-    radial-gradient(circle at top left, rgba(243, 179, 79, 0.12), transparent 24%),
     radial-gradient(circle at 86% 16%, rgba(20, 79, 63, 0.1), transparent 24%),
     linear-gradient(180deg, #fffaf4 0%, var(--bg) 46%, #fdfaf5 100%);
   color: var(--ink);
   font-family: "Inter Local", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   margin: 0;
-  overflow-x: hidden;
+  position: relative;
 }
 
 body::before {
@@ -76,46 +75,41 @@ body::before {
   z-index: -1;
 }
 
-img {
-  display: block;
-  max-width: 100%;
-}
-
 a {
   color: inherit;
   text-decoration: none;
 }
 
-h1,
-h2,
-h3,
-p {
-  margin-top: 0;
+img {
+  display: block;
+  max-width: 100%;
 }
 
 h1,
 h2,
 h3 {
+  color: var(--primary-dark);
   font-family: "Playfair Local", Georgia, "Times New Roman", serif;
   font-weight: 700;
+  letter-spacing: -0.03em;
+  margin: 0;
 }
 
 h1 {
-  font-size: clamp(48px, 4.4vw, 68px);
-  line-height: 1.02;
-  margin-bottom: 22px;
+  font-size: clamp(48px, 6vw, 82px);
+  line-height: 0.94;
+  margin-bottom: 14px;
 }
 
 h2 {
-  font-size: clamp(30px, 3.6vw, 46px);
-  line-height: 1.08;
-  margin-bottom: 16px;
+  font-size: clamp(34px, 4vw, 54px);
+  line-height: 1.06;
+  margin-bottom: 8px;
 }
 
 h3 {
-  font-size: 20px;
-  line-height: 1.25;
-  margin-bottom: 8px;
+  font-size: clamp(24px, 3vw, 36px);
+  line-height: 1.08;
 }
 
 .site-header {
@@ -324,13 +318,6 @@ main {
   line-height: 1.05;
 }
 
-.primary-store {
-  background: var(--primary);
-  border-color: var(--primary);
-  box-shadow: 0 14px 28px rgba(20, 79, 63, 0.16);
-  color: #fff;
-}
-
 .secondary-store {
   background: rgba(255, 255, 255, 0.78);
   border-color: rgba(20, 79, 63, 0.14);
@@ -339,20 +326,6 @@ main {
 
 .secondary-store span {
   color: var(--muted);
-}
-
-.hero-proof {
-  align-items: center;
-  color: var(--primary-dark);
-  display: flex;
-  font-size: 14px;
-  font-weight: 600;
-  gap: 12px;
-  margin: 18px 0 0;
-}
-
-.hero-proof span {
-  color: var(--accent);
 }
 
 .hero-visual {
@@ -708,27 +681,58 @@ main {
   box-shadow: var(--shadow-strong);
   display: grid;
   height: auto;
+  margin-left: calc(var(--section-inline-gap) + clamp(18px, 2.6vw, 42px));
+  margin-right: calc(var(--section-inline-gap) + clamp(18px, 2.6vw, 42px));
   min-height: 276px;
-  overflow: hidden;
+  overflow: visible;
   position: relative;
   padding: 18px 0 16px;
 }
 
 .daily-flow::before {
-  background: url("assets/screens/landingpage_gross.png") center / 100% 100% no-repeat;
+  background: url("assets/screens/vase_kerze.png") left bottom / auto 114% no-repeat;
   content: "";
-  inset: 0;
+  bottom: -14px;
+  left: -56px;
   position: absolute;
-  transform: none;
-  transform-origin: center;
-  z-index: 0;
+  top: 0;
+  width: min(29%, 430px);
+  z-index: 2;
+}
+
+.daily-flow::after {
+  background: url("assets/screens/kaffee_buch.png") right bottom / auto 114% no-repeat;
+  content: "";
+  bottom: -16px;
+  position: absolute;
+  right: -64px;
+  top: 0;
+  width: min(33%, 500px);
+  z-index: 2;
+}
+
+.daily-flow > * {
+  position: relative;
+  z-index: 3;
+}
+
+.daily-flow .section-heading,
+.daily-flow-shell {
+  padding-left: clamp(126px, 16vw, 260px);
+  padding-right: clamp(150px, 19vw, 320px);
 }
 
 .daily-flow .section-heading {
   margin: 0 auto 10px;
   max-width: none;
+}
+
+.daily-flow-shell {
+  align-items: center;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr;
   position: relative;
-  z-index: 1;
 }
 
 .daily-flow h2 {
@@ -757,16 +761,6 @@ main {
   margin-bottom: 10px;
 }
 
-.daily-flow-shell {
-  align-items: center;
-  display: grid;
-  gap: 10px;
-  grid-template-columns: 1fr;
-  padding: 0 20px;
-  position: relative;
-  z-index: 1;
-}
-
 .flow-steps {
   align-items: center;
   background: transparent;
@@ -781,6 +775,11 @@ main {
 }
 
 .flow-steps article {
+  background: rgba(255, 255, 255, 0.16);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  border-radius: 24px;
+  box-shadow: 0 10px 24px rgba(34, 28, 20, 0.04);
+  backdrop-filter: blur(2px);
   padding: 0 8px;
   position: relative;
   text-align: center;
@@ -790,7 +789,7 @@ main {
   background: rgba(255, 255, 255, 0.46);
   border: 1px solid rgba(255, 255, 255, 0.54);
   color: #111111;
-  font-size: 22px;
+  font-size: 28px;
   height: 68px;
   margin-bottom: 10px;
   width: 68px;
@@ -942,44 +941,82 @@ main {
   justify-content: center;
 }
 
-.trust-strip {
-  display: grid;
-  gap: 16px;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  margin-bottom: 26px;
-}
-
-.trust-strip article {
-  background: rgba(255, 255, 255, 0.72);
-  border: 1px solid rgba(255, 255, 255, 0.78);
-  border-radius: 24px;
-  box-shadow: var(--shadow-soft);
-  padding: 22px;
+.playstore-title {
+  font-weight: 600;
 }
 
 .site-footer {
-  align-items: start;
-  background: rgba(255, 255, 255, 0.68);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.82), rgba(249, 242, 231, 0.92));
   border: 1px solid rgba(255, 255, 255, 0.72);
   border-radius: 34px;
   box-shadow: var(--shadow-strong);
-  display: flex;
-  gap: 24px;
-  justify-content: space-between;
-  padding: 30px 36px;
+  display: grid;
+  gap: 28px;
+  margin-top: 18px;
+  padding: 34px 36px 24px;
 }
 
 .site-footer p {
   font-size: 14px;
   margin: 12px 0 0;
-  max-width: 420px;
+  max-width: 360px;
 }
 
-.site-footer nav {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 14px 22px;
-  justify-content: flex-end;
+.footer-grid {
+  align-items: start;
+  display: grid;
+  gap: 28px;
+  grid-template-columns: minmax(0, 1.1fr) minmax(160px, 0.7fr) minmax(250px, 0.9fr);
+}
+
+.footer-column {
+  display: grid;
+  gap: 14px;
+  justify-items: start;
+}
+
+.footer-heading {
+  color: var(--primary-dark);
+  font-family: "Playfair Local", Georgia, "Times New Roman", serif;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  line-height: 1.1;
+  text-transform: uppercase;
+}
+
+.footer-nav,
+.footer-service-nav {
+  display: grid;
+  gap: 12px;
+}
+
+.footer-nav a,
+.footer-service-nav a {
+  color: var(--primary-dark);
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.footer-nav-column {
+  padding-top: 4px;
+}
+
+.footer-service-card {
+  background: rgba(255, 255, 255, 0.36);
+  border: 1px solid rgba(20, 79, 63, 0.12);
+  border-radius: 24px;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.34);
+  padding: 20px 22px;
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(20, 79, 63, 0.12);
+  color: var(--muted);
+  font-size: 14px;
+  padding-top: 18px;
+  text-align: center;
 }
 
 .legal-page {
@@ -1003,6 +1040,12 @@ main {
 
 .footer-brand {
   margin-bottom: 10px;
+}
+
+.footer-nav a,
+.footer-service-nav a,
+.footer-support a {
+  text-underline-offset: 4px;
 }
 
 @media (max-width: 1020px) {
@@ -1076,7 +1119,19 @@ main {
   }
 
   .daily-flow::before {
-    background-size: cover;
+    background-size: auto 72%;
+    width: min(24%, 180px);
+  }
+
+  .daily-flow::after {
+    background-size: auto 72%;
+    width: min(28%, 220px);
+  }
+
+  .daily-flow .section-heading,
+  .daily-flow-shell {
+    padding-left: clamp(34px, 7vw, 96px);
+    padding-right: clamp(42px, 8vw, 118px);
   }
 
   .daily-flow .section-heading {
@@ -1160,7 +1215,6 @@ main {
   .daily-flow,
   .faq-section,
   .final-cta,
-  .trust-strip,
   .site-footer {
     margin-left: 18px;
     margin-right: 18px;
@@ -1180,6 +1234,14 @@ main {
   .daily-flow .section-heading {
     margin-bottom: 14px;
     padding: 0 12px;
+  }
+
+  .site-footer {
+    padding: 30px 28px 22px;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
   }
 
   .daily-flow h2 {
@@ -1218,13 +1280,22 @@ main {
   .benefit-grid,
   .faq-grid,
   .flow-steps,
-  .trust-strip {
+  .footer-nav,
+  .footer-service-nav {
     grid-template-columns: 1fr;
   }
 
   .feature-ribbon {
     margin-top: 18px;
     padding: 18px;
+  }
+
+  .site-footer {
+    padding: 26px 24px;
+  }
+
+  .footer-heading {
+    font-size: 20px;
   }
 
   .flow-steps {
@@ -1274,6 +1345,17 @@ main {
   .download-row {
     display: grid;
     grid-template-columns: 1fr;
+  }
+
+  .daily-flow::before,
+  .daily-flow::after {
+    display: none;
+  }
+
+  .daily-flow .section-heading,
+  .daily-flow-shell {
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   .store-badge {
